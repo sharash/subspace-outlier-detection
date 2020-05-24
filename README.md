@@ -5,8 +5,9 @@ This repo contains a Jupyter notebook with a Julia implementation of the outlier
 * Original paper: [DOI](https://doi.org/10.1007/978-3-642-01307-2_86), [PDF](http://www.dbs.informatik.uni-muenchen.de/~zimek/publications/PAKDD2009/pakdd09-SOD.pdf)
 * [Slides from PAKDD 2009](https://imada.sdu.dk/~zimek/publications/PAKDD2009/SOD-slides.pdf)
 
+See the notebook [here](https://nbviewer.jupyter.org/github/sharash/subspace-outlier-detection/blob/master/Subspace%20outlier%20detection.ipynb) for code and further details.
 
-## Concept of SOD
+## Idea behind SOD
 For any given point, find a set of reference points, for example the nearest neighbors. Using a subset of the features, create a hyperplane along which the variance of the reference points is high. Then see how far from this hyperplane the point of interest is.
 
 To put it another way, find the stable features for the reference points, then measure how far away the point of interest is from the reference points in these stable features. In the following image, SOD finds the green hyperplane (line), and measures the distance between the red point and the line to determine whether a point is an outlier.
@@ -32,4 +33,4 @@ and the corresponding curves for PCAOD:
 
 The PCA-based method seems to have a slight edge on the arrythmia and ionosphere datasets.
 
-See the Jupyter notebook for code and further details.
+See the [Jupyter notebook](https://nbviewer.jupyter.org/github/sharash/subspace-outlier-detection/blob/master/Subspace%20outlier%20detection.ipynb) for code and further details.
