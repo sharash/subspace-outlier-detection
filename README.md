@@ -14,9 +14,9 @@ To put it another way, find the stable features for the reference points, then m
 
 <img src="images/sod-points.png" width="500" />
 
-At this points, I suggest a simple modification: what if we use a PCA to create a variance-maximizing hyperplane fit to the reference points, and measure the distance to the point of interest? In other words, instead of creating a hyperplane using a subset of features, we create the hyperplane using combinations of all features (using PCA).
+At this point, I suggest a simple modification: what if we use a PCA to create a variance-maximizing hyperplane fit to the reference points, and measure the distance to the point of interest? In other words, instead of creating a hyperplane using a subset of the features, we create the hyperplane using a linear combination of all features (using PCA).
 
-To explain it using images, SOD, creates a hyperplane (line) along the axis that the reference point features vary the most, as in the figure above, and then measures the distance between that line and the point of interest. PCA outlier detection creates a hyperplane (line) that maximizes the variance of the reference point features:
+To explain it using images, SOD creates a hyperplane (line) along the axis that the reference point features vary the most, as in the figure above, and then measures the distance between that line and the point of interest. PCA outlier detection finds the hyperplane (line) that maximizes the variance of the reference point features:
 
 <img src="images/pcaod-points.png" width="500" />
 
